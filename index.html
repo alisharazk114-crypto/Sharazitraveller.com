@@ -3,42 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About - Sharazi Traveller</title>
+<title>Sharazi Traveller - About</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#060e1f;color:#cbd6e9;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;overflow-x:hidden}
-.top{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#060e1f;z-index:10;border-bottom:1px solid #111e35}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:#fff;font-size:13px;letter-spacing:.5px}
-.logo-icon{width:34px;height:34px;background:linear-gradient(180deg,#ff6a33,#ff3a00);border-radius:50%;display:flex;align-items:center;justify-content:center}
+body{background:#070f22;color:#cbd6e9;font-family:-apple-system,BlinkMacSystemFont,sans-serif;overflow-x:hidden}
+.top{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#070f22;z-index:10;border-bottom:1px solid #101e36}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:#fff;font-size:13px;letter-spacing:.8px;line-height:1.1}
+.logo-icon{width:38px;height:38px;background:linear-gradient(135deg,#ff6a33,#ff3a00);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
 .menu-btn{font-size:26px;color:#fff;background:none;border:none;cursor:pointer}
-
-/* SLIDE MENU - EXACT LIKE SCREENSHOT */
-#nav{position:fixed;inset:0;background:#070f22;z-index:100;display:flex;flex-direction:column;padding:18px;transform:translateX(100%);transition:transform .35s ease}
+#nav{position:fixed;inset:0;background:#070f22;z-index:100;display:flex;flex-direction:column;padding:18px;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1)}
 #nav.open{transform:translateX(0)}
-.nav-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
-.close-btn{background:none;border:none;color:#fff;font-size:24px;cursor:pointer}
-.nav-link{display:block;padding:16px 18px;color:#c7d3e6;text-decoration:none;font-size:17px;border-radius:12px;margin:2px 0}
-.nav-link.active{background:rgba(255,77,18,.14);color:#ff4d12;font-weight:600}
-.book-now{margin-top:18px;background:#ff4d12;color:#fff;text-align:center;padding:18px;border-radius:28px;font-weight:800;text-decoration:none;font-size:16px;display:block;border-bottom:1px solid rgba(255,255,255,.08)}
-
+.nav-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
+.close-btn{background:none;border:none;color:#fff;font-size:26px;cursor:pointer;padding:4px}
+.nav-link{display:block;padding:18px 18px;color:#a8b5cc;text-decoration:none;font-size:17px;border-radius:12px;margin:1px 0}
+.nav-link.active{background:#1e1210;color:#ff4d12;font-weight:700}
+.book-now{margin-top:20px;background:#ff4d12;color:#fff;text-align:center;padding:19px;border-radius:32px;font-weight:800;text-decoration:none;font-size:16px;display:block;box-shadow:0 8px 20px rgba(255,77,18,.3)}
 .wrap{max-width:900px;margin:0 auto;padding:0 18px 40px}
 .kicker{color:#ff4d12;font-size:12px;font-weight:800;letter-spacing:2.4px;margin-top:32px}
-.h1{color:#fff;font-size:36px;font-weight:800;line-height:1.1;margin-top:10px}
+.h1{color:#fff;font-size:34px;font-weight:800;line-height:1.1;margin-top:10px}
 .hero-img{width:100%;height:260px;object-fit:cover;border-radius:18px;margin-top:22px;border:1px solid #1a2a4a}
 .h2{color:#fff;font-size:20px;font-weight:700;margin-top:36px}
-.p{color:#8ea0bd;line-height:1.7;font-size:14.5px;margin-top:12px}
-.box{margin-top:16px;background:#0b1730;border:1px solid #1d2e4f;border-radius:16px;padding:20px}
+.p{color:#8ea0bd;line-height:1.75;font-size:14.5px;margin-top:12px}
+.box{margin-top:16px;background:#0d1933;border:1px solid #1d2e4f;border-radius:16px;padding:20px}
 .box h3{color:#fff;font-size:14px;margin-bottom:8px}
 .stats{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.stat{background:#0b1730;border:1px solid #1c2e4f;border-radius:14px;padding:20px;text-align:center}
+.stat{background:#0d1933;border:1px solid #1c2e4f;border-radius:14px;padding:20px;text-align:center}
 .stat b{color:#ff4d12;font-size:28px;display:block;font-weight:800}
 .stat span{color:#7a8aaa;font-size:12px;margin-top:6px;display:block}
 .team-title{color:#fff;font-size:22px;font-weight:800;margin-top:44px;margin-bottom:14px}
-.card{border:1px solid rgba(255,77,18,.35);background:#0b1730;border-radius:16px;padding:22px;margin-top:12px}
+.card{border:1px solid rgba(255,77,18,.35);background:#0d1933;border-radius:16px;padding:22px;margin-top:12px}
 .card b{color:#fff;font-size:15px}
 .card .role{color:#ff4d12;font-size:12px;font-weight:600;margin-top:4px}
 .card .desc{color:#8ea0bd;font-size:13px;line-height:1.6;margin-top:8px}
-.footer{margin-top:40px;border-top:1px solid #14223c;padding:30px 18px;background:#060e1f}
+.footer{margin-top:40px;border-top:1px solid #14223c;padding:30px 18px;background:#070f22}
 .f-h{color:#ff4d12;font-size:12px;font-weight:800;letter-spacing:1.5px;margin-top:28px;margin-bottom:12px}
 .f-a{display:block;color:#8ea0bd;text-decoration:none;font-size:14px;margin:8px 0}
 .f-contact{color:#8ea0bd;font-size:14px;margin:6px 0}
@@ -49,32 +46,31 @@ body{background:#060e1f;color:#cbd6e9;font-family:-apple-system,BlinkMacSystemFo
 <body>
 
 <div class="top">
-<div class="logo"><div class="logo-icon">⛰️</div>SHARAZI TRAVELLER</div>
+<div class="logo"><div class="logo-icon">⛰️</div><div>SHARAZI<br>TRAVELLER</div></div>
 <button class="menu-btn" onclick="openNav()">☰</button>
 </div>
 
-<!-- EXACT MENU LIKE YOUR SCREENSHOT -->
 <div id="nav">
 <div class="nav-head">
-<div class="logo"><div class="logo-icon">⛰️</div>KARAKORAM<br>BACKPACKERS</div>
+<div class="logo"><div class="logo-icon">⛰️</div><div>SHARAZI<br>TRAVELLER</div></div>
 <button class="close-btn" onclick="closeNav()">✕</button>
 </div>
 <a class="nav-link" href="#home" onclick="closeNav()">Home</a>
-<a class="nav-link" href="#dest" onclick="closeNav()">Destinations</a>
+<a class="nav-link" href="#destinations" onclick="closeNav()">Destinations</a>
 <a class="nav-link" href="#tours" onclick="closeNav()">Tours</a>
 <a class="nav-link" href="#gallery" onclick="closeNav()">Gallery</a>
 <a class="nav-link active" href="#about" onclick="closeNav()">About</a>
 <a class="nav-link" href="#contact" onclick="closeNav()">Contact</a>
-<a class="book-now" href="https://wa.me/923498505852">Book Now</a>
+<a class="book-now" href="https://wa.me/923498505852?text=Salam%20Sharazi%20Bhai!%20I%20want%20to%20Book%20Now">Book Now</a>
 </div>
 
-<div class="wrap" id="about">
+<div class="wrap">
 <div class="kicker">OUR STORY</div>
 <h1 class="h1">Born in the Mountains, Built for Adventure</h1>
-<img class="hero-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900">
+<img class="hero-img" src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=900">
 
 <h2 class="h2">Company Story</h2>
-<p class="p">Karakoram Backpackers was founded in Gilgit-Baltistan by Ali Shan (Founder & Trip Manager) and Zahid Hussain (Co-Founder & Tour Operator). Based in Danyore, we specialize in customized tours across northern Pakistan and focus on sustainable tourism — authentic experiences in the Karakoram, Hindukush, and Himalayas.</p>
+<p class="p"><b style="color:#fff">Sharazi Traveller</b> was founded in Gilgit-Baltistan by Ali Sharaz (Founder & Trip Manager). Based in Gilgit - Near Chinese Graveyard, Danyore, we specialize in customized tours across northern Pakistan and focus on sustainable tourism — authentic experiences in the Karakoram, Hindukush, and Himalayas.</p>
 <p class="p">Today we lead family tours, festival journeys, and treks across Fairy Meadows, Hunza, Skardu, Khaplu, Shimshal, Darel, and Kalash — always with local expertise, sustainable practices, and an unwavering commitment to safety.</p>
 
 <div class="box"><h3>Our Mission</h3><p class="p">To share the unparalleled beauty of Gilgit-Baltistan with travelers worldwide through safe, sustainable, and deeply authentic adventure experiences led by local experts.</p></div>
@@ -88,29 +84,24 @@ body{background:#060e1f;color:#cbd6e9;font-family:-apple-system,BlinkMacSystemFo
 </div>
 
 <div class="team-title">Meet Our Team</div>
-
-<div class="card"><b>Ali Shan</b><div class="role">Founder & Trip Manager</div><div class="desc">Founder of Karakoram Backpackers. Plans and leads trips across the Karakoram, Hindukush, and Himalayas from our Danyore office.</div></div>
-<div class="card"><b>Zahid Hussain</b><div class="role">Co-Founder & Tour Operator</div><div class="desc">Co-founder and tour operator. Oversees operations and guest experience for customized northern Pakistan itineraries.</div></div>
-<div class="card"><b>Dr. Nabeel Hussain</b><div class="role">Expedition Doctor</div><div class="desc">Expedition doctor supporting high-altitude trips and guest wellbeing on the trail.</div></div>
+<div class="card"><b>Ali Sharaz</b><div class="role">Founder & Trip Manager - Gilgit</div><div class="desc">Founder of Sharazi Traveller. Plans and leads trips across the Karakoram, Hindukush, and Himalayas from our Gilgit office. 0349 8505852</div></div>
+<div class="card"><b>Zahid Hussain</b><div class="role">Co-Founder & Tour Operator</div><div class="desc">Oversees operations and guest experience for customized northern Pakistan itineraries.</div></div>
+<div class="card"><b>Dr. Nabeel Hussain</b><div class="role">Expedition Doctor</div><div class="desc">Supporting high-altitude trips and guest wellbeing on the trail.</div></div>
 <div class="card"><b>Ikhlaq Hussain</b><div class="role">Senior Trip Leader</div><div class="desc">Senior trip leader for multi-day tours across Gilgit-Baltistan.</div></div>
-<div class="card"><b>Zahoor Mehdi</b><div class="role">Senior Tour Guide</div><div class="desc">Senior tour guide with deep local knowledge of mountain routes and village culture.</div></div>
-<div class="card"><b>Rehan Shango</b><div class="role">Off-Roading Expert & Tour Guide</div><div class="desc">Off-roading specialist and tour guide for jeep tracks, remote valleys, and high passes.</div></div>
-<div class="card"><b>Zameer Abbas</b><div class="role">Tour Guide — Gilgit & Skardu</div><div class="desc">Guide for the Gilgit and Skardu region, including lakes, forts, and Baltistan circuits.</div></div>
-<div class="card"><b>Hasnain Fida</b><div class="role">Tour Guide — Nagar & Hunza</div><div class="desc">Guide for Nagar and Hunza Valley — forts, Passu, and the Karakoram Highway corridor.</div></div>
-<div class="card"><b>Hammad Faiz</b><div class="role">Senior Tour Guide — Lahore Region</div><div class="desc">Senior tour guide coordinating departures and guest care from the Lahore side.</div></div>
-<div class="card"><b>Sumaira</b><div class="role">Senior Trip Leader</div><div class="desc">Senior trip leader supporting group logistics and guest experience on the trail.</div></div>
+<div class="card"><b>Zahoor Mehdi</b><div class="role">Senior Tour Guide</div><div class="desc">Deep local knowledge of mountain routes and village culture.</div></div>
+<div class="card"><b>Rehan Shango</b><div class="role">Off-Roading Expert & Tour Guide</div><div class="desc">Specialist for jeep tracks, remote valleys, and high passes.</div></div>
 </div>
 
-<div class="footer">
+<div class="footer" id="contact">
 <div class="f-h">IMPORTANT LINKS</div>
 <a class="f-a" href="#">Team</a><a class="f-a" href="#">Gallery</a><a class="f-a" href="#">About</a><a class="f-a" href="#">Contact</a>
 <div class="f-h">TOURS</div>
 <a class="f-a" href="#">Family Tours</a><a class="f-a" href="#">Hunza Valley</a><a class="f-a" href="#">Fairy Meadows</a><a class="f-a" href="#">Hunza, Naltar Valley, China Border</a>
 <div class="f-h">CONNECT WITH US</div>
-<div class="f-contact">📍 KKH, Near Chinese Graveyard, Danyore, Gilgit</div>
-<div class="f-contact">📞 03124883570</div>
-<div class="f-contact">✉️ support@karakorambackpackers.com</div>
-<div class="copy">Copyright 2026 © All Right Reserved. Karakoram Backpackers</div>
+<div class="f-contact">📍 KKH, Near Chinese Graveyard, Danyore, Gilgit - Sharazi Traveller</div>
+<div class="f-contact">📞 0349 8505852 / 0312 4883570</div>
+<div class="f-contact">✉️ alisharazk114@gmail.com</div>
+<div class="copy">Copyright 2026 © All Right Reserved. Sharazi Traveller</div>
 </div>
 
 <a class="wa" href="https://wa.me/923498505852">WhatsApp</a>
