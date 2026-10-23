@@ -2,113 +2,43 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sharazi Traveller - About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharazi Traveller - Explore Gilgit Baltistan</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#070f22;color:#cbd6e9;font-family:-apple-system,BlinkMacSystemFont,sans-serif;overflow-x:hidden}
-.top{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#070f22;z-index:10;border-bottom:1px solid #101e36}
-.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:#fff;font-size:13px;letter-spacing:.8px;line-height:1.1}
-.logo-icon{width:38px;height:38px;background:linear-gradient(135deg,#ff6a33,#ff3a00);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
-.menu-btn{font-size:26px;color:#fff;background:none;border:none;cursor:pointer}
-#nav{position:fixed;inset:0;background:#070f22;z-index:100;display:flex;flex-direction:column;padding:18px;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1)}
-#nav.open{transform:translateX(0)}
-.nav-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
-.close-btn{background:none;border:none;color:#fff;font-size:26px;cursor:pointer;padding:4px}
-.nav-link{display:block;padding:18px 18px;color:#a8b5cc;text-decoration:none;font-size:17px;border-radius:12px;margin:1px 0}
-.nav-link.active{background:#1e1210;color:#ff4d12;font-weight:700}
-.book-now{margin-top:20px;background:#ff4d12;color:#fff;text-align:center;padding:19px;border-radius:32px;font-weight:800;text-decoration:none;font-size:16px;display:block;box-shadow:0 8px 20px rgba(255,77,18,.3)}
-.wrap{max-width:900px;margin:0 auto;padding:0 18px 40px}
-.kicker{color:#ff4d12;font-size:12px;font-weight:800;letter-spacing:2.4px;margin-top:32px}
-.h1{color:#fff;font-size:34px;font-weight:800;line-height:1.1;margin-top:10px}
-.hero-img{width:100%;height:260px;object-fit:cover;border-radius:18px;margin-top:22px;border:1px solid #1a2a4a}
-.h2{color:#fff;font-size:20px;font-weight:700;margin-top:36px}
-.p{color:#8ea0bd;line-height:1.75;font-size:14.5px;margin-top:12px}
-.box{margin-top:16px;background:#0d1933;border:1px solid #1d2e4f;border-radius:16px;padding:20px}
-.box h3{color:#fff;font-size:14px;margin-bottom:8px}
-.stats{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.stat{background:#0d1933;border:1px solid #1c2e4f;border-radius:14px;padding:20px;text-align:center}
-.stat b{color:#ff4d12;font-size:28px;display:block;font-weight:800}
-.stat span{color:#7a8aaa;font-size:12px;margin-top:6px;display:block}
-.team-title{color:#fff;font-size:22px;font-weight:800;margin-top:44px;margin-bottom:14px}
-.card{border:1px solid rgba(255,77,18,.35);background:#0d1933;border-radius:16px;padding:22px;margin-top:12px}
-.card b{color:#fff;font-size:15px}
-.card .role{color:#ff4d12;font-size:12px;font-weight:600;margin-top:4px}
-.card .desc{color:#8ea0bd;font-size:13px;line-height:1.6;margin-top:8px}
-.footer{margin-top:40px;border-top:1px solid #14223c;padding:30px 18px;background:#070f22}
-.f-h{color:#ff4d12;font-size:12px;font-weight:800;letter-spacing:1.5px;margin-top:28px;margin-bottom:12px}
-.f-a{display:block;color:#8ea0bd;text-decoration:none;font-size:14px;margin:8px 0}
-.f-contact{color:#8ea0bd;font-size:14px;margin:6px 0}
-.copy{color:#5a6a85;font-size:11px;margin-top:30px;text-align:center}
-.wa{position:fixed;bottom:18px;right:16px;background:#25D366;color:#fff;padding:12px 20px;border-radius:100px;font-weight:800;z-index:40;text-decoration:none;font-size:14px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f8fafc;color:#1e293b}
+header{background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,0.05);padding:12px 5%}
+nav{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:700;color:#0f6a3d}
+.logo span{color:#f59e0b}
+.hero{background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070');background-size:cover;background-position:center;height:85vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:20px}
+.hero h1{font-size:38px;line-height:1.2;margin-bottom:12px}
+.hero p{font-size:17px;margin-bottom:22px}
+.btn{padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:700;display:inline-block}
+.btn-primary{background:#f59e0b;color:#000}
+.btn-outline{border:2px solid white;color:white;margin-left:8px}
+.section{padding:55px 5%}
+.section-title{text-align:center;margin-bottom:30px}
+.section-title h2{font-size:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card-body{padding:16px}
+.price{color:#0f6a3d;font-weight:700}
+.feat{background:white;padding:22px;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,0.05);text-align:center}
+.contact-box{background:#0f6a3d;color:white;border-radius:20px;padding:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.wa-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,0.25);z-index:200}
+footer{background:#0f172a;color:#94a3b8;text-align:center;padding:22px;font-size:12px}
 </style>
 </head>
 <body>
-
-<div class="top">
-<div class="logo"><div class="logo-icon">⛰️</div><div>SHARAZI<br>TRAVELLER</div></div>
-<button class="menu-btn" onclick="openNav()">☰</button>
-</div>
-
-<div id="nav">
-<div class="nav-head">
-<div class="logo"><div class="logo-icon">⛰️</div><div>SHARAZI<br>TRAVELLER</div></div>
-<button class="close-btn" onclick="closeNav()">✕</button>
-</div>
-<a class="nav-link" href="#home" onclick="closeNav()">Home</a>
-<a class="nav-link" href="#destinations" onclick="closeNav()">Destinations</a>
-<a class="nav-link" href="#tours" onclick="closeNav()">Tours</a>
-<a class="nav-link" href="#gallery" onclick="closeNav()">Gallery</a>
-<a class="nav-link active" href="#about" onclick="closeNav()">About</a>
-<a class="nav-link" href="#contact" onclick="closeNav()">Contact</a>
-<a class="book-now" href="https://wa.me/923498505852?text=Salam%20Sharazi%20Bhai!%20I%20want%20to%20Book%20Now">Book Now</a>
-</div>
-
-<div class="wrap">
-<div class="kicker">OUR STORY</div>
-<h1 class="h1">Born in the Mountains, Built for Adventure</h1>
-<img class="hero-img" src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=900">
-
-<h2 class="h2">Company Story</h2>
-<p class="p"><b style="color:#fff">Sharazi Traveller</b> was founded in Gilgit-Baltistan by Ali Sharaz (Founder & Trip Manager). Based in Gilgit - Near Chinese Graveyard, Danyore, we specialize in customized tours across northern Pakistan and focus on sustainable tourism — authentic experiences in the Karakoram, Hindukush, and Himalayas.</p>
-<p class="p">Today we lead family tours, festival journeys, and treks across Fairy Meadows, Hunza, Skardu, Khaplu, Shimshal, Darel, and Kalash — always with local expertise, sustainable practices, and an unwavering commitment to safety.</p>
-
-<div class="box"><h3>Our Mission</h3><p class="p">To share the unparalleled beauty of Gilgit-Baltistan with travelers worldwide through safe, sustainable, and deeply authentic adventure experiences led by local experts.</p></div>
-<div class="box"><h3>Our Vision</h3><p class="p">To establish Pakistan's northern areas as a premier global adventure destination — where world-class expeditions meet warm Balti hospitality and leave positive impact on local communities.</p></div>
-
-<div class="stats">
-<div class="stat"><b>8+</b><span>Years Guiding</span></div>
-<div class="stat"><b>438</b><span>International Guests</span></div>
-<div class="stat"><b>173</b><span>Local Guests</span></div>
-<div class="stat"><b>611</b><span>Trips Led</span></div>
-</div>
-
-<div class="team-title">Meet Our Team</div>
-<div class="card"><b>Ali Sharaz</b><div class="role">Founder & Trip Manager - Gilgit</div><div class="desc">Founder of Sharazi Traveller. Plans and leads trips across the Karakoram, Hindukush, and Himalayas from our Gilgit office. 0349 8505852</div></div>
-<div class="card"><b>Safder Abbas </b><div class="role">Co-Founder & Tour Operator</div><div class="desc">Oversees operations and guest experience for customized northern Pakistan itineraries.</div></div>
-<div class="card"><b>Hussan sharaz</b><div class="role">Expedition Doctor</div><div class="desc">Supporting high-altitude trips and guest wellbeing on the trail.</div></div>
-<div class="card"><b>Asif Hussain</b><div class="role">Senior Trip Leader</div><div class="desc">Senior trip leader for multi-day tours across Gilgit-Baltistan.</div></div>
-<div class="card"><b>Muhammad Mehdi</b><div class="role">Senior Tour Guide</div><div class="desc">Deep local knowledge of mountain routes and village culture.</div></div>
-<div class="card"><b>Ahtisham Ali</b><div class="role">Off-Roading Expert & Tour Guide</div><div class="desc">Specialist for jeep tracks, remote valleys, and high passes.</div></div>
-</div>
-
-<div class="footer" id="contact">
-<div class="f-h">IMPORTANT LINKS</div>
-<a class="f-a" href="#">Team</a><a class="f-a" href="#">Gallery</a><a class="f-a" href="#">About</a><a class="f-a" href="#">Contact</a>
-<div class="f-h">TOURS</div>
-<a class="f-a" href="#">Family Tours</a><a class="f-a" href="#">Hunza Valley</a><a class="f-a" href="#">Fairy Meadows</a><a class="f-a" href="#">Hunza, Naltar Valley, China Border</a>
-<div class="f-h">CONNECT WITH US</div>
-<div class="f-contact">📍 KKH, Near Chinese Graveyard, Danyore, Gilgit - Sharazi Traveller</div>
-<div class="f-contact">📞 0349 8505852 / 0312 4883570</div>
-<div class="f-contact">✉️ alisharazk114@gmail.com</div>
-<div class="copy">Copyright 2026 © All Right Reserved. Sharazi Traveller</div>
-</div>
-
-<a class="wa" href="https://wa.me/923498505852">WhatsApp</a>
-
-<script>
-function openNav(){document.getElementById('nav').classList.add('open')}
-function closeNav(){document.getElementById('nav').classList.remove('open')}
-</script>
+<a class="wa-float" href="https://wa.me/923488123456" target="_blank">💬</a>
+<header><nav><div class="logo">Sharazi<span>Traveller</span>.com</div></nav></header>
+<section class="hero"><div><h1>Explore Beauty of<br>Gilgit Baltistan</h1><p>Hunza | Skardu | Naltar | Fairy Meadows</p><a href="https://wa.me/923488123456" class="btn btn-primary">Book on WhatsApp</a><a href="#packages" class="btn btn-outline">View Packages</a></div></section>
+<section class="section"><div class="section-title"><h2>Top Destinations</h2><p>Most loved places</p></div><div class="cards"><div class="card"><img src="https://images.unsplash.com/photo-1518638150340-f706e86654b8?q=80&w=600"><div class="card-body"><h3>Hunza Valley</h3><p style="font-size:13px;color:#64748b">Attabad Lake, Baltit Fort, Eagle Nest</p><div class="price">From PKR 35,000</div></div></div><div class="card"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600"><div class="card-body"><h3>Skardu & Deosai</h3><p style="font-size:13px;color:#64748b">Shangrila, Shigar Fort, Cold Desert</p><div class="price">From PKR 45,000</div></div></div><div class="card"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600"><div class="card-body"><h3>Fairy Meadows</h3><p style="font-size:13px;color:#64748b">Face to face with Nanga Parbat</p><div class="price">From PKR 40,000</div></div></div></div></section>
+<section class="section" id="packages" style="background:#fff"><div class="section-title"><h2>Tour Packages</h2></div><div class="cards"><div class="card"><div class="card-body"><h3>5 Days Hunza Tour</h3><p style="font-size:13px">Islamabad to Hunza, Naltar, Attabad</p><p style="font-size:13px">✅ Hotel + Transport</p><div class="price">PKR 35,000 / person</div><br><a href="https://wa.me/923488123456" class="btn btn-primary" style="padding:8px 18px;font-size:13px">Book Now</a></div></div><div class="card"><div class="card-body"><h3>7 Days Skardu + Hunza</h3><p style="font-size:13px">Complete GB tour</p><p style="font-size:13px">✅ 4x4 Prado + Hotels</p><div class="price">PKR 65,000 / person</div><br><a href="https://wa.me/923488123456" class="btn btn-primary" style="padding:8px 18px;font-size:13px">Book Now</a></div></div><div class="card"><div class="card-body"><h3>3 Days Naltar</h3><p style="font-size:13px">Weekend escape</p><p style="font-size:13px">✅ Couple Friendly</p><div class="price">PKR 25,000 / person</div><br><a href="https://wa.me/923488123456" class="btn btn-primary" style="padding:8px 18px;font-size:13px">Book Now</a></div></div></div></section>
+<section class="section" id="contact"><div class="contact-box"><div><h2>Ready for your trip?</h2><p style="margin-top:10px">📍 Gilgit, GB<br>📞 0348-8123456<br>📧 info@sharazitraveller.com</p></div><div style="background:white;border-radius:14px;padding:20px;color:#1e293b"><h3>Quick Inquiry</h3><a href="https://wa.me/923488123456" style="display:block;text-align:center;background:#25D366;color:white;padding:12px;border-radius:30px;text-decoration:none;font-weight:700;margin-top:10px">Chat on WhatsApp</a></div></div></section>
+<footer>© 2026 SharaziTraveller.com — Made in Gilgit with ❤️</footer>
 </body>
 </html>
