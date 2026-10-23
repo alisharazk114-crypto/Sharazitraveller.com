@@ -1,22 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SHARAZI TRAVELLER - Gilgit Baltistan</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<title>SHARAZI TRAVELLER</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#0a0f1c;color:white;font-family:'Inter',sans-serif}
-.top{padding:20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-family:'Bebas Neue';font-size:24px;letter-spacing:2px}
+body{background:#0a0f1c;color:#fff;font-family:system-ui}
+.top{padding:20px;display:flex;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:1px}
 .logo span{color:#ff4d12}
-.hero{padding:40px 24px 20px}
-.hero h1{font-family:'Bebas Neue';font-size:62px;line-height:.9;letter-spacing:1px}
+.hero{padding:30px 20px}
+.hero h1{font-size:56px;line-height:0.9;font-weight:900}
 .hero h1 span{color:#ff4d12}
-.hero p{margin-top:20px;color:#aab2c0;font-size:18px;line-height:1.5;max-width:300px}
-.btns{margin-top:30px;display:flex;flex-direction:column;gap:14px}
-.btn-orange{background:#ff4d12;color:white;padding:18px;border-radius:12px;text-decoration:none;font-weight:600;text-align:center;font-size:18px;display:flex;justify-content:center;align-items:center;gap:8px}
-.btn-dark{background:#111a2d;color:white;border:1px solid #23304d;padding:18px;border-radius:12px;text-decoration:none;font-weight:600;text-align:center;font-size:18px}
-.stats{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.stat{background:#111a2d;border:1px solid #1d2a45
+.hero p{color:#aab2c0;margin-top:16px;font-size:18px}
+.btn{display:block;padding:18px;border-radius:12px;text-align:center;text-decoration:none;font-weight:700;margin-top:16px}
+.o{background:#ff4d12;color:#fff}
+.d{background:#111a2d;color:#fff;border:1px solid #23304d}
+.stats{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{background:#111a2d;border:1px solid #1d2a45;border-radius:14px;padding:20px;text-align:center}
+.stat b{color:#ff4d12;font-size:28px;display:block}
+.stat span{color:#8a95ac;font-size:11px}
+.card{margin:14px 20px;background:#111a2d;border:1px solid #1d2a45;border-radius:14px;overflow:hidden}
+.card img{width:100%;height:170px;object-fit:cover}
+.card-body{padding:14px}
+.price{color:#ff4d12;font-weight:700;margin:6px 0}
+.card-body a{background:#ff4d12;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;display:inline-block}
+.box{margin:20px;background:#111a2d;border:1px solid #1d2a45;border-radius:14px;padding:20px}
+.box input{width:100%;padding:13px;margin:7px 0;background:#0a0f1c;border:1px solid #23304d;border-radius:10px;color:#fff}
+.box button{width:100%;background:#ff4d12;color:#fff;padding:14px;border:none;border-radius:10px;font-weight:700}
+.wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 20px;border-radius:30px;text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<div class="top"><div class="logo">SHARAZI <span>TRAVELLER</span></div><div>☰</div></div>
+<div class="hero">
+<h1>SHARAZI<br><span>TRAVELLER</span></h1>
+<p>Discover the Majestic Karakoram, Hindukush, and Himalayas.</p>
+<a class="btn o" href="https://wa.me/923498505852">Join us Now →</a>
+<a class="btn d" href="#tours">Watch Story</a>
+</div>
+<div class="stats">
+<div class="stat"><b>8+</b><span>YEARS GUIDING</span></div>
+<div class="stat"><b>438</b><span>INTERNATIONAL GUESTS</span></div>
+<div class="stat"><b>173</b><span>LOCAL GUESTS</span></div>
+<div class="stat"><b>611</b><span>TRIPS LED</span></div>
+</div>
+<div id="tours">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600">
+<div class="card-body">
+<h3>Hunza Valley - 5 Days</h3>
+<div class="price">PKR 35,000</div>
+<a href="https://wa.me/923498505852?text=Book%20Hunza">Book Now</a>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600">
+<div class="card-body">
+<h3>Skardu Deosai - 6 Days</h3>
+<div class="price">PKR 55,000</div>
+<a href="https://wa.me/923498505852?text=Book%20Skardu">Book Now</a>
+</div>
+</div>
+</div>
+<div class="box">
+<h2>Quick Booking</h2>
+<input id="n" placeholder="Your Name">
+<input id="t" placeholder="Tour Name">
+<input id="d" type="date">
+<input id="p" type="number" placeholder="People">
+<button onclick="s()">Send to WhatsApp</button>
+</div>
+<a class="wa" href="https://wa.me/923498505852">WhatsApp</a>
+<script>
+function s(){
+var a=document.getElementById('n').value;
+var b=document.getElementById('t').value;
+var c=document.getElementById('d').value;
+var d=document.getElementById('p').value;
+var m="Salam Sharazi Bhai! Name:"+a+" Tour:"+b+" Date:"+c+" People:"+d;
+window.open("https://wa.me/923498505852?text="+encodeURIComponent(m),"_blank");
+}
+</script>
+</body>
+</html>
